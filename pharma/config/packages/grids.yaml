@@ -1,0 +1,21 @@
+sylius_grid:
+    grids:
+        app_admin_image_banner:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: App\Entity\ImageBanner
+            fields:
+                path:
+                    type: twig
+                    options:
+                        template: "_fieldImage.html.twig"
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete

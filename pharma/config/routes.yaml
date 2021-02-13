@@ -1,0 +1,15 @@
+#sylius_paypal_webhook:
+#   resource: "@SyliusPayPalPlugin/Resources/config/webhook_routing.yaml"
+
+#welcome:
+#    path: /DiolPharma
+    
+app_banner_image:
+    resource: |
+        alias: app.image_banner
+        section: admin
+        templates: SyliusAdminBundle:Crud
+        grid: app_admin_image_banner
+        redirect: index
+    type: sylius.resource
+    prefix: admin
